@@ -18,3 +18,25 @@ Curso Mensageria com RabbitMQ e ASP.NET Core no nextwave(LuisDEV)
    - Permite que sistemas distribuidos sejam desenvolvidos, implantados, e escalados de forma independente
    - Melhora a resilência do sistema, pis uma falha em um componente não afeta diretamente os outros
    - Melhora a performance em fluxo de operações com multiplos passos, pois permite que nem todos precisem ser feitos na requisição inicial
+   
+### O que é RabbitMQ
+ - RabbitMQ é uma ferramenta de mensageria open-source bastante popular
+ - Possui suporte a vários protocolos de mensageria e que pode ser facilmente conectado a diversos sistemas, incluindo aplicações .NET
+ - Ele é conhecido por ser leve e fácil de publicar tanto on premise quanto na nuvem
+ - Tambem suporta requisitos de alta escalabilidade e disponibilidade
+ - Finalmente, pode ser executado em diferentes sistemas operacionais e ambientes de nuvem.
+ - Em uma comunicação através de mensageria, o Rabbit atua como intermediário na troca de mensagens entre os produtos e consumidores
+ - O produtor é a aplicação que gera e envia mensagens para uma fila
+ - Já o consumidor é a aplicação que recebe e processa essas mensagens
+ - Os principais conceitos relacionados ao RabbitMQ são:
+   - Exchanges
+   - Filas
+   - Bindings
+   - Routings Keys
+ - O RabbitMQ oferece diversas funcionalidades, como:
+   - Roteamento flexivel de mensagens
+   - Dead Letter Queue
+   - Confirmação de mensagens
+   - Clusterização para alta disponibilidade
+   - API HTTP, interface de usuário e linha de comando para gerenciamento e monitoramento
+   - Plugins
