@@ -1,6 +1,6 @@
 Curso Mensageria com RabbitMQ e ASP.NET Core no nextwave(LuisDEV)
 
-# O que é Mensageria ?
+### O que é Mensageria ?
  - Antes de falar sobre mensageria, é importante entender sobre a forma de comunicação tradicional, estilo Request-Response.
  - Nela, um componente de software realiza uma requisição a um servidor, aguardando a sua resposta.
  - Concluindo o processamento da requisição, o servidor retorna a resposta
