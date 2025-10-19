@@ -40,3 +40,40 @@ Curso Mensageria com RabbitMQ e ASP.NET Core no nextwave(LuisDEV)
    - Clusterização para alta disponibilidade
    - API HTTP, interface de usuário e linha de comando para gerenciamento e monitoramento
    - Plugins
+   
+### Arquitetura do RabbitMQ
+ - Os principais conceitos relacionados ao RabbitMQ e sua arquitetura são:
+   - Filas
+   - Exchanges
+   - Bindings
+   - Routing Keys
+  - Fila
+    - A fila é um armazenamento temporário para mensagens que ainda não foram processadas.
+    - As mensagens são publicadas para os Exchanges, que então as redirecionam para a fila correspondente
+    - Os consumidores recebem mensagens das filas, processando as suas informações.
+    - Ao criar uma fila no RabbitMQ, há várias propriedades importantes que pdoem ser definidas. Entre elas, as principais são:
+      - Durabilidade: Se for true, significa que elas sobreviverão a um reinicio do servidor RabbitMQ e as mensagens não confirmadas serão re-enfileiradas
+      - Exclusividade: Se for true, significa que a fila será exclusiva, sendo usada por apenas conexão e então excluída quando essa conexão for fechada.
+      - Auto-delete: Se for true, ela será automaticamente apagada quando o ultimo consumidor se desconectar.
+      - Message TTL: Se refere ao periodo de tempo que uma mensagem não entregue permanece na fila antes de ser descartada ou movida para outra fila. O valor é especificado em milissegundos.
+  - Exchange
+    - Exchanges são um componente essencial na arquitetura do RabbitMQ
+    - Eles recebem mensagems dos produtores e as direcionam para as filas
+    - Este direcionamento é baseado em regras denominadas bindings, que são estabelecidas entre as exchanges e as filas
+    - Os bindings podem avaliar a Routing Key, que seria um atributo adicionado ao cabeçalho da mensagem, que serve como um endereço que o exchange poderá decidir com rotear a mensagem ao definir o binding
+    - Existem 4 tipos de exchange:
+      - Direct
+      - Default
+      - Topic
+      - Fanout
+    - Direct
+      - Envia mensagens para uma ou mais fila(s) que os bindings exatamente encaixa com a routing key
+    - Topic
+      - Similar ao Direct, mas oferece bem mais flexibilidade pois permite utilizar padrões de correspondecia com o astericos(*) e cerquilha (#), não necessitando ter a binding key igual a routing key
+      - Asterisco represennta uma única palavra qualquer
+      - Cerquilha representa qualquer numero de palavras
+    - Default
+      - É uma exchange de tipo "Direct", sem nome "", que todas filas criadas se registram com a routing key igual ao seu nome.
+    - Fanout
+      - Copia e roteia todas as mensagens recebidadas para todas filas que estão registradas na Exchange, independente de routing keys ou padrões definidos
+      
