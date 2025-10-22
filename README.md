@@ -77,3 +77,25 @@ Curso Mensageria com RabbitMQ e ASP.NET Core no nextwave(LuisDEV)
     - Fanout
       - Copia e roteia todas as mensagens recebidadas para todas filas que estão registradas na Exchange, independente de routing keys ou padrões definidos
       
+### Comparativos entre ferramentas
+ - RabbitMQ é apenas uma das muitas opções disponiveis de ferramentas para mensageria
+ - Outras soluções incluem:
+   - Apache Kafla
+   - ActiveMQ
+   - Amazon SQS
+   - Azure Service Bus
+ - O Apache Kafka, por exemplo, é conhecido por sua alta capacidade de taxa de transferência e capacidade de armazenar grandes volumes de dados
+ - Isso o torna particularmente adequado para processamento de dados em tempo real.
+ - Ele também é altamente extensivel e integrável com outros serviços, principalmente através de seus conectores
+ - No entanto, ele é mais complexo para configurar e gerenciar do que o RabbitMQ
+ - Já o ActiveMQ é outra opção open-source que oferece suporte para vários protocolos de mensagens
+ - Ele tem uma longa historico de uso em aplicações enterprise e oferece muitos recursos avançados
+ - Porém, ele não tem a mesma performance do RabbitMQ ou do Apache Kafka quando se trata de ligar com altas cargas de mensagens
+ - O Amazon Simple Queue Service (SQS) é um serviço de fila de mensagens totalmente gerenciado que se integra bem ao ecossistema AWS
+ - Ele oferece duas opções principais: filas padrão, que oferecem throughput maximo, e filas FIFO, que preservam a ordem das mensagens.
+ - O SQS é simples de configurar e escala facilmente para lidar com altos volumes de mensagens
+ - No entanto, em comparação com o RabbitMQ, o SQS é menos flexivel em termos de padrões de roteamento de mensagens. 
+ - O Azure Service Bus é a solução de mensageria da Microsoft para a sua plataforma em nuvem, Azure.
+ - Oferece recursos como filas, tópicos e assinaturas, e suporta uma variedade de padrões de comunicação, incluindo publish/subscribe,request/reply e peer-to-peer.
+ - Assim como o SQS, o Azure Service Bus é totalmente gerenciado e se integra bem ao ecossistema Azure
+ - No entanto, pode ser mais caro do que o RabbitMQ ou a SQS, dependendo do volume de mensagens. 
