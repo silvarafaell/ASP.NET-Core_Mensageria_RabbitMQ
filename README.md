@@ -98,4 +98,21 @@ Curso Mensageria com RabbitMQ e ASP.NET Core no nextwave(LuisDEV)
  - O Azure Service Bus é a solução de mensageria da Microsoft para a sua plataforma em nuvem, Azure.
  - Oferece recursos como filas, tópicos e assinaturas, e suporta uma variedade de padrões de comunicação, incluindo publish/subscribe,request/reply e peer-to-peer.
  - Assim como o SQS, o Azure Service Bus é totalmente gerenciado e se integra bem ao ecossistema Azure
- - No entanto, pode ser mais caro do que o RabbitMQ ou a SQS, dependendo do volume de mensagens. 
+ - No entanto, pode ser mais caro do que o RabbitMQ ou a SQS, dependendo do volume de mensagens.
+
+### Instalando o RabbitMQ
+ - Existem várias maneiras de instalar o RabbitMQ, e que vou abordar aqui:
+   - Instalação Manual
+   - Instalação com Gerenciadores de Pacotes
+   - Usando Docker
+   - Serviços em Nuvem
+ - Existem várias maneiras de instalar o RabbitMQ, e que vou abordar aqui:
+   - Instalação Manual
+     - Você pode baixar o RabbitMQ do site oficial e instalá-lo manualmente no seu sistema operacional
+   - Instalação com Gerenciadores de Pacotes:
+     - No windows, dá para usar o Chocolatey. Já no Linux, você pode usar gerenciadores de pacotes como o apt e yum. Para o MacOS, você pode usar o brew
+   - Usando Docker:
+     - é possivel executar o RabbitMQ em qualquer maquina com suporte a containers Docker, incluindo Windows, MacOS e Linux
+     - docker run -d --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3-management
+   - Serviços em Nuvem: 
+     - você também pode usar um serviço de nuvem que forneça o RabbitMQ como um serviço, como o CloudAMQP.
