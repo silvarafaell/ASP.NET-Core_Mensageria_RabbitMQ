@@ -108,7 +108,13 @@ Curso Mensageria com RabbitMQ e ASP.NET Core no nextwave(LuisDEV)
    - Serviços em Nuvem
  - Existem várias maneiras de instalar o RabbitMQ, e que vou abordar aqui:
    - Instalação Manual
-     - Você pode baixar o RabbitMQ do site oficial e instalá-lo manualmente no seu sistema operacional
+     - Você pode baixar o RabbitMQ do site oficial e instalá-lo manualmente no seu sistema operacional.
+     - Baixar o Erlang, no instalador do RabbitMQ pedi para baixar o Erlang.
+     - Baixar o Executável do RabbitMQ
+     - CMD: telnet 127.0.0.1 5672
+     - CMD: C:\Program Files\RabbitMQ Server\rabbitmq_server-4.1.4\sbin > rabbitmq-plugins enable rabbitmq_management
+     - No navegador 127.0.0.1:5672 ou localhost:5672
+     - login guest e guest
    - Instalação com Gerenciadores de Pacotes:
      - No windows, dá para usar o Chocolatey. Já no Linux, você pode usar gerenciadores de pacotes como o apt e yum. Para o MacOS, você pode usar o brew
    - Usando Docker:
