@@ -122,3 +122,19 @@ Curso Mensageria com RabbitMQ e ASP.NET Core no nextwave(LuisDEV)
      - docker run -d --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3-management
    - Serviços em Nuvem: 
      - você também pode usar um serviço de nuvem que forneça o RabbitMQ como um serviço, como o CloudAMQP.
+
+ ### Conhecendo o RabbitMQ.Client
+  - O RabbitMQ é a biblioteca oficial em .NET para RabbitMQ, mantida pela equipe da própria ferramenta.
+  - Seu principal beneficio é que fornece controle completo sobre o RabbitMQ, oferecendo acesso direto a todos os recursos do RabbitMQ sem qualquer abstração.
+  - Principais Recursos
+    - Controle completo
+    - Performance
+    - Suporte para todos os protocolos RabbitMQ
+    - Manutenção pela equipe do RabbitMQ
+  - Principais Recursos
+    - Controle Completo: Com o RabbitMQ.Client, você tem acesso total a todos os recursos do RabbitMQ, sem as abstações que podem limitar sua flexibilidade.
+    - Performance: Como uma biblioteca de baixo nivel, RabbitMQ.Client tende a oferecer melhor desempenho do que bibliotecas de mais alto nivel como EasyNetQ
+      - Inclusive, esse é um ponto a se avaliar em comparativos de  todo tipo de ferramenta! Bibliotecas de baixo nivel tendem a terem melhor performance do que bibliotecas          de mais alto nivel, que ofereçam grandes abstações.
+    - Suporte para todos os protocolos RabbitMQ: RabbotMQ.Client suporta todos os protocolos RabbitMQ, incluindo AMQP o-9-1, AMQP 1.0 e MQTT
+    - Manutenção pela equipe: RabbitMQ.Client é mantida pela mesma equipe que mantem o RabbitMQ, o que garante uma boa compatibilidade e suporte
+  
