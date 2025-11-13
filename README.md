@@ -162,4 +162,3 @@ Curso Mensageria com RabbitMQ e ASP.NET Core no nextwave(LuisDEV)
    - Funcionário contratado/cadastrado
  - O padrão Publish-Subscribe é implementado com a utilização de um mediador, que é responsavel por gerenciar a publicação de mensagens e a inscrição de objetos para receber notificações
  - Ele pode ser implementado de várias maneiras, como por exemplo, com a utilização de um Message Broker como o RabbitMQ
- - 
