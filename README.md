@@ -137,4 +137,13 @@ Curso Mensageria com RabbitMQ e ASP.NET Core no nextwave(LuisDEV)
       - Inclusive, esse é um ponto a se avaliar em comparativos de  todo tipo de ferramenta! Bibliotecas de baixo nivel tendem a terem melhor performance do que bibliotecas          de mais alto nivel, que ofereçam grandes abstações.
     - Suporte para todos os protocolos RabbitMQ: RabbotMQ.Client suporta todos os protocolos RabbitMQ, incluindo AMQP o-9-1, AMQP 1.0 e MQTT
     - Manutenção pela equipe: RabbitMQ.Client é mantida pela mesma equipe que mantem o RabbitMQ, o que garante uma boa compatibilidade e suporte
-  
+
+### Conhecendo o EasyNetQ
+ - O EasyNetQ é uma biblioteca open-source para o RabbitMQ
+ - A principal característica do EasyNetQ é a simplificação da interação com o RabbitMQ, fornecendo uma interface de alto nível e fácil de usar
+ - Com isso , ele esconde muitos dos detalhes de implementação que podem tornar o RabbitMQ dificil de gerenciar
+ - Principais recursos
+   - Interface de alto nível
+   - Serialização/Deserialização de mensagens
+   - Reconexão de consumidor
+   - Gerenciamento de erros
