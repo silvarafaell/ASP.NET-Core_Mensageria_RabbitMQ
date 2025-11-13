@@ -147,3 +147,19 @@ Curso Mensageria com RabbitMQ e ASP.NET Core no nextwave(LuisDEV)
    - Serialização/Deserialização de mensagens
    - Reconexão de consumidor
    - Gerenciamento de erros
+
+### O padrão Publish-Subscribe
+ - O Padrão Publish-Subscribe é um padrão de projeto de software que permite que componentes enviem mensagens uns aos outros sem precisar conhecer diretamente quem as receberá
+ - Em vez disso, os componentes simplesmente publicam suas mensagens em um tópico, e outros se inscrevem para receber notificações sobre esses tópicos
+ - Ele é util em situações em que há dois ou mais objetos que podem estar interessados em receber notificações sobre determinados eventos ou atualizações de estado em seu sistema.
+ - Além disso, o padrão Publish-Subscribe ajuda a evitar dependencis fortes entre os objetos, pois eles não precisam conhecer diretamente uns aos outros, resultando em menor acoplamento entre os componentes do sistema.
+ - Mas que tipos de atualizações componentes podem estar interessados em receber notificações ?
+ - Aqui estão alguns exemplos:
+   - Pedido criado
+   - Usuario Bloqueado
+   - Pagamento confirmado
+   - Reclamação aberta
+   - Funcionário contratado/cadastrado
+ - O padrão Publish-Subscribe é implementado com a utilização de um mediador, que é responsavel por gerenciar a publicação de mensagens e a inscrição de objetos para receber notificações
+ - Ele pode ser implementado de várias maneiras, como por exemplo, com a utilização de um Message Broker como o RabbitMQ
+ - 
